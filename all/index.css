@@ -1,0 +1,41 @@
+
+body {
+    background-color: #ece5df;
+    padding: 50px;
+}
+
+.thumbnail-div {
+    width: 235px;
+    height: 200px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+    opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .35s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .35s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .35s ease-in-out;  
+}
+.thumbnail-div:hover {
+    opacity: 1.0;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .35s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .35s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .35s ease-in-out; 
+}
+
+.thumbnail-div>img {
+    max-width: 150%;
+
+}
+
+.smalltext {
+    font-size: 0.7em;
+}
+
+
+

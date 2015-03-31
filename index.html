@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>John Kelly &mdash; Selected Work</title>
+<meta name="description" content="Page description goes here">
+
+<!-- ******************************************************************************************
+Set the type and color theme here - the Pro version contains additional themes -->
+<!-- <link href="css/hawthorne_type2_color3.css" rel="stylesheet"> -->
+<link href="all/hawthorne_type1_color1.css" rel="stylesheet">
+<link href="all/index.css" rel="stylesheet">
+<!--  ************************************************************************************* -->
+
+<link href="all/font-awesome.min.css" rel="stylesheet">
+<script src="all/vendor/modernizr.js"></script>
+
+</head>
+<body>
+
+
+
+<div class="row" id="gallery">
+	<div class="small-12 medium-12 large-12 columns">
+		<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 inline-list-custom">
+			
+			<!-- Begin project -->
+			<!-- <li>
+				<div class="thumbnail">
+					<div class="thumbnail-img">
+						<div class="thumbnail-hover"><a href="project-01.html"></a></div>
+						<a href="project-01.html"><img src="img/projects/project-01.png" alt="Project 01" /></a>
+					</div>
+					<div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 01</a></div>
+				</div>
+			</li> -->
+			<!-- End project -->
+			
+			
+						
+		</ul>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<footer>
+
+			<div class="social-icons">
+				<a href="http://www.github.com/jhnklly" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="http://www.twitter.com/jhnklly" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+			</div>
+
+      <ul>
+        <li id="powby" class="smalltext">Powered by <a href="http://www.typeandgrids.com" target="_blank">Type &amp; Grids</a></li>
+      </ul>
+
+		</footer>
+	</div>
+</div>
+
+<script src="all/vendor/jquery.min.js"></script>
+<!-- <script src="all/foundation.min.js"></script>
+<script src="all/hawthorne.js"></script>
+
+ -->
+<script>
+var URLS = [
+  {
+    "name":"Project Viewer",
+    "jpg":"scc_pv",
+    "url":"http://mapcollaborator.org/scc2/project_viewer/prod/"
+  },
+  {
+    "name":"GIS-in-URL",
+    "jpg":"gis-in-url",
+    "url":"http://websites.greeninfo.org/deltacouncil/atlas2/live/"
+  },
+  {
+    "name":"MapCollaborator",
+    "jpg":"mapcollab",
+    "url":"http://comap.cnhp.colostate.edu/dev/mapcollab/site/login"
+  },
+  {
+    "name":"Greenbelt Mapper",
+    "jpg":"greenbelt_risk",
+    "url":"http://www.greenbelt.org/greenbelt-mapper/"
+  },
+  {
+    "name":"GIN labs: projectionuesser",
+    "jpg":"proj",
+    "url":"http://websites.greeninfo.org/greeninfo/labs/projectionuesser/live/"
+  },
+  {
+    "name":"GIN labs: wind",
+    "jpg":"wind",
+    "url":"http://websites.greeninfo.org/greeninfo/labs/wind/live/"
+  },
+  {
+    "name":"Conservation Values Web Map",
+    "jpg":"morongo",
+    "url":"http://websites.greeninfo.org/morongo/mbcv/live/"
+  },
+  {
+    "name":"Estuary KML",
+    "jpg":"tnc_estuary",
+    "url":"http://www.tnccmaps.org/estuaries/"
+  },
+  {
+    "name":"Coastal Conservancy:GIS Services On-Call Contract:Task 11 - MapCollab updates",
+    "jpg":"mc_scc",
+    "url":"http://www.mapcollaborator.org/coastal_dev/site/login"
+  },
+  {
+    "name":"Clinton Health Access Initiative:Southern Africa Malaria",
+    "jpg":"clinton_malariamap",
+    "url":"http://websites.greeninfo.org/chai/malariamaps/live/"
+  },
+  {
+    "name":"The Pew Charitable Trusts:Oceans North",
+    "jpg":"pew_oceansnorth",
+    "url":"http://www.mapsportal.org/pew/OceansNorth/"
+  },
+  {
+    "name":"GIN labs: ETL",
+    "jpg":"etl",
+    "url":"http://websites.greeninfo.org/greeninfo/labs/etl/live/"
+  },
+  {
+    "name":"Bay Nature EndangerBus",
+    "jpg":"endangerbus",
+    "url":"http://websites.greeninfo.org/baynature/buses/"
+  },
+  {
+    "name":"Coal Exports",
+    "jpg":"nwf",
+    "url":"http://websites.greeninfo.org/nwf/wifemt/live2/"
+  },
+  {
+    "name":"CEC Atlas",
+    "jpg":"cec_atlas",
+    "url":"http://www.cec.org/atlas/map/"
+  },
+  {
+    "name":"GIN labs: georapport",
+    "jpg":"georapport",
+    "url":"http://websites.greeninfo.org/greeninfo/labs/georapport/"
+  },
+  {
+    "name":"Bay Atlas Demo",
+    "jpg":"bay",
+    "url":"http://websites.greeninfo.org/bay_institute/atlas/live/#9/37.8566/-122.3450"
+  },
+  {
+    "name":"Wildspaces: Parcelization",
+    "jpg":"parcels",
+    "url":"http://parcels.greeninfo.org/"
+  },
+  {
+    "name":"Parks Partners Database",
+    "jpg":"stateparksfoundation",
+    "url":"http://websites.greeninfo.org/calparks/partners/"
+  },
+  {
+    "name":"Bay Area Lands Explorer",
+    "jpg":"balands_explorer",
+    "url":"http://www.bayarealands.org/explorer/"
+  },
+  {
+    "name":"Community FactFinder",
+    "jpg":"cff",
+    "url":"http://www.parkinfo.org/factfinder2011/grantee"
+  },
+  {
+    "name":"Reefcheck",
+    "jpg":"reefcheck",
+    "url":"http://data.reefcheck.us/"
+  },
+  {
+    "name":"Wildlife Web Cams",
+    "jpg":"tnc_wildlife",
+    "url":"http://websites.greeninfo.org/tnc/wildlifemap/v2dev/"
+  },
+  {
+    "name":"Factory Farms",
+    "jpg":"cafo",
+    "url":"http://www.cafomap.org/"
+  }
+];
+
+
+
+for (var i = 0; i < URLS.length; i++) {
+  //$item = $('<div class="thumbnail-wrap"></div>').append('\
+	$item = $('<a target="_blank" href="'+URLS[i].url+'"></a>').append('\
+		<div class="thumbnail-div">\
+					<img src="img/'+URLS[i].jpg+'.jpg"/>\
+				</div>\
+		');
+				
+	
+	$('#gallery').append($item);
+};
+
+</script>
+
+</body>
+</html>
