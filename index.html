@@ -23,27 +23,44 @@ Set the type and color theme here - the Pro version contains additional themes -
 
 <div class="row">
   <div class="small-12 medium-12 large-12 small-centered columns">
-    <header>    
+    <header>
       <h1><a href="/">John Kelly</a></h1>
 
       <p class="subtitle">I make maps and apps to explore, visualize, and communicate geospatial data.</p>
     </header>
-
-  
   </div>
+
+<hr>
+
+  <div class="small-12 medium-12 large-12 small-centered columns">
+      <!-- Selected Work -->
+      <p class="note">Made with <a target="_blank" href="https://developer.mapsense.co/">mapsense.js</a>.
+      </p>
+  </div>
+</div>
+
+<div class="row" id="ms_gallery">
+  <div class="small-12 medium-12 large-12 columns">
+    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 inline-list-custom">
+
+    </ul>
+  </div>
+</div>
+
+<hr>
 
   <div class="small-12 medium-12 large-12 small-centered columns">
       <!-- Selected Work -->
       <p class="note">Projects contributed to under employ of <a target="_blank" href="http://www.greeninfo.org">GreenInfo Network</a>. &copy; GreenInfo Network
       </p>
       <!-- <a href="#footnote-1"><sup>1</sup></a> -->
-    <!-- 
+    <!--
     <nav>
       <ul class="inline-list-custom">
         <li><a href="/"  class="current" >Selected Work</a></li>
         <li><a href="/about" >About</a></li>
         <li><a href="/blog" >Blog</a></li>
-      </ul> 
+      </ul>
     </nav>
     -->
   </div>
@@ -52,7 +69,7 @@ Set the type and color theme here - the Pro version contains additional themes -
 <div class="row" id="gallery">
 	<div class="small-12 medium-12 large-12 columns">
 		<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 inline-list-custom">
-						
+
 		</ul>
 	</div>
 </div>
@@ -86,140 +103,169 @@ Set the type and color theme here - the Pro version contains additional themes -
 
  -->
 <script>
-var URLS = [
+var MS_URLS = [
   {
-    "name":"Project Viewer",
-    "jpg":"scc_pv",
-    "url":"http://www.mapcollaborator.org/scc/pv/prod/"
+    "name":"OSM-POI",
+    "jpg":"osm_poi.png",
+    "url":"http://jmk-staging.divshot.io/osm-points-two-layers-hash.html#ice cream/gelato"
   },
   {
+    "name":"Census Viewer",
+    "jpg":"census_tut.png",
+    "url":"http://bl.ocks.org/mapsense-examples/raw/52732b29ec244f470777/"
+  }
+];
+
+
+var URLS = [
+  /*{
+    "name":"Project Viewer",
+    "jpg":"scc_pv.jpg",
+    "url":"http://www.mapcollaborator.org/scc/pv/prod/"
+  },
+  */
+  {
     "name":"GIS-in-URL",
-    "jpg":"gis-in-url",
+    "jpg":"gis-in-url.jpg",
     "url":"http://websites.greeninfo.org/deltacouncil/atlas2/live/"
   },
   {
     "name":"MapCollaborator",
-    "jpg":"mapcollab",
-    "url":"http://comap.cnhp.colostate.edu/dev/mapcollab/site/login"
+    "jpg":"mapcollab.jpg",
+    //"url":"http://comap.cnhp.colostate.edu/dev/mapcollab/site/login"
+    "url":"hhttp://www.mapcollaborator.org/editordemo/"
   },
   {
     "name":"Greenbelt Mapper",
-    "jpg":"greenbelt_risk",
+    "jpg":"greenbelt_risk.jpg",
     "url":"http://www.greenbelt.org/greenbelt-mapper/"
   },
   {
     "name":"GIN labs: projectionuesser",
-    "jpg":"proj",
+    "jpg":"proj.jpg",
     "url":"http://websites.greeninfo.org/greeninfo/labs/projectionuesser/live/"
   },
   {
     "name":"GIN labs: wind",
-    "jpg":"wind",
+    "jpg":"wind.jpg",
     "url":"http://websites.greeninfo.org/greeninfo/labs/wind/live/"
   },
   {
     "name":"Conservation Values Web Map",
-    "jpg":"morongo",
+    "jpg":"morongo.jpg",
     "url":"http://websites.greeninfo.org/morongo/mbcv/live/"
   },
   {
     "name":"Estuary KML",
-    "jpg":"tnc_estuary",
+    "jpg":"tnc_estuary.jpg",
     "url":"http://www.tnccmaps.org/estuaries/"
   },
   {
     "name":"Coastal Conservancy:GIS Services On-Call Contract:Task 11 - MapCollab updates",
-    "jpg":"mc_scc",
+    "jpg":"mc_scc.jpg",
     "url":"http://www.mapcollaborator.org/coastal_dev/site/login"
   },
   {
     "name":"Clinton Health Access Initiative:Southern Africa Malaria",
-    "jpg":"clinton_malariamap",
+    "jpg":"clinton_malariamap.jpg",
     "url":"http://websites.greeninfo.org/chai/malariamaps/live/"
   },
   {
     "name":"The Pew Charitable Trusts:Oceans North",
-    "jpg":"pew_oceansnorth",
+    "jpg":"pew_oceansnorth.jpg",
     "url":"http://www.mapsportal.org/pew/OceansNorth/"
   },
   {
     "name":"GIN labs: ETL",
-    "jpg":"etl",
+    "jpg":"etl.jpg",
     "url":"http://websites.greeninfo.org/greeninfo/labs/etl/live/"
   },
   {
     "name":"Bay Nature EndangerBus",
-    "jpg":"endangerbus",
+    "jpg":"endangerbus.jpg",
     "url":"http://websites.greeninfo.org/baynature/buses/"
   },
   {
     "name":"Coal Exports",
-    "jpg":"nwf",
+    "jpg":"nwf.jpg",
     "url":"http://websites.greeninfo.org/nwf/wifemt/live2/"
   },
   {
     "name":"CEC Atlas",
-    "jpg":"cec_atlas",
+    "jpg":"cec_atlas.jpg",
     "url":"http://www.cec.org/atlas/map/"
   },
   {
     "name":"GIN labs: georapport",
-    "jpg":"georapport",
+    "jpg":"georapport.jpg",
     "url":"http://websites.greeninfo.org/greeninfo/labs/georapport/"
   },
   {
     "name":"Bay Atlas Demo",
-    "jpg":"bay",
+    "jpg":"bay.jpg",
     "url":"http://websites.greeninfo.org/bay_institute/atlas/live/#9/37.8566/-122.3450"
   },
   {
     "name":"Wildspaces: Parcelization",
-    "jpg":"parcels",
+    "jpg":"parcels.jpg",
     "url":"http://parcels.greeninfo.org/"
   },
   {
     "name":"Parks Partners Database",
-    "jpg":"stateparksfoundation",
+    "jpg":"stateparksfoundation.jpg",
     "url":"http://websites.greeninfo.org/calparks/partners/"
   },
   {
     "name":"Bay Area Lands Explorer",
-    "jpg":"balands_explorer",
+    "jpg":"balands_explorer.jpg",
     "url":"http://www.bayarealands.org/explorer/"
   },
   {
     "name":"Community FactFinder",
-    "jpg":"cff",
+    "jpg":"cff.jpg",
     "url":"http://www.parkinfo.org/factfinder2011/grantee"
   },
   {
     "name":"Reefcheck",
-    "jpg":"reefcheck",
+    "jpg":"reefcheck.jpg",
     "url":"http://data.reefcheck.us/"
   },
   {
     "name":"Wildlife Web Cams",
-    "jpg":"tnc_wildlife",
+    "jpg":"tnc_wildlife.jpg",
     "url":"http://websites.greeninfo.org/tnc/wildlifemap/v2dev/"
   },
   {
     "name":"Factory Farms",
-    "jpg":"cafo",
+    "jpg":"cafo.jpg",
     "url":"http://www.cafomap.org/"
   }
 ];
 
 
 
+for (var i = 0; i < MS_URLS.length; i++) {
+  //$item = $('<div class="thumbnail-wrap"></div>').append('\
+  $item = $('<a target="_blank" href="'+MS_URLS[i].url+'"></a>').append('\
+    <div class="thumbnail-div">\
+          <img src="img/'+MS_URLS[i].jpg+'"/>\
+        </div>\
+    ');
+
+
+  $('#ms_gallery').append($item);
+};
+
+// GIN
 for (var i = 0; i < URLS.length; i++) {
   //$item = $('<div class="thumbnail-wrap"></div>').append('\
 	$item = $('<a target="_blank" href="'+URLS[i].url+'"></a>').append('\
 		<div class="thumbnail-div">\
-					<img src="img/'+URLS[i].jpg+'.jpg"/>\
+          <img src="img/'+URLS[i].jpg+'"/>\
 				</div>\
 		');
-				
-	
+
+
 	$('#gallery').append($item);
 };
 
