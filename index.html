@@ -7,12 +7,9 @@
 <title>John Kelly Cartography</title>
 <meta name="description" content="Selected geospatial / cartography / mapping / GIS of John Kelly">
 
-<!-- ******************************************************************************************
-Set the type and color theme here - the Pro version contains additional themes -->
 <!-- <link href="css/hawthorne_type2_color3.css" rel="stylesheet"> -->
 <link href="all/hawthorne_type1_color1.css" rel="stylesheet">
 <link href="all/index.css" rel="stylesheet">
-<!--  ************************************************************************************* -->
 
 <link href="all/font-awesome.min.css" rel="stylesheet">
 <script src="all/vendor/modernizr.js"></script>
@@ -26,7 +23,7 @@ Set the type and color theme here - the Pro version contains additional themes -
     <header>
       <h1><a href="/">John Kelly</a></h1>
 
-      <p class="subtitle">I make maps and apps to explore, visualize, and communicate geospatial data.</p>
+      <p class="subtitle">Maps and apps to explore, visualize, and communicate geospatial data.</p>
     </header>
   </div>
 
@@ -51,7 +48,7 @@ Set the type and color theme here - the Pro version contains additional themes -
 
   <div class="small-12 medium-12 large-12 small-centered columns">
       <!-- Selected Work -->
-      <p class="note">Projects contributed to under employ of <a target="_blank" href="http://www.greeninfo.org">GreenInfo Network</a>. &copy; GreenInfo Network
+      <p class="note">Projects contributed to while employed by <a target="_blank" href="http://www.greeninfo.org">GreenInfo Network</a>. &copy; GreenInfo Network
       </p>
       <!-- <a href="#footnote-1"><sup>1</sup></a> -->
     <!--
@@ -67,21 +64,21 @@ Set the type and color theme here - the Pro version contains additional themes -
 </div>
 
 <div class="row" id="gallery">
-	<div class="small-12 medium-12 large-12 columns">
-		<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 inline-list-custom">
+  <div class="small-12 medium-12 large-12 columns">
+    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 inline-list-custom">
 
-		</ul>
-	</div>
+    </ul>
+  </div>
 </div>
 
 <div class="row">
-	<div class="small-12 medium-12 large-12 columns">
-		<footer>
+  <div class="small-12 medium-12 large-12 columns">
+    <footer>
 
-			<div class="social-icons">
-				<a href="http://www.github.com/jhnklly" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+      <div class="social-icons">
+        <a href="http://www.github.com/jhnklly" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
         <a href="http://www.twitter.com/jhnklly" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-			</div>
+      </div>
 
       <!-- <div id="footnote-div">
           <p class="footnote, smalltext" id="footnote-1">
@@ -93,15 +90,15 @@ Set the type and color theme here - the Pro version contains additional themes -
         <li id="powby" class="smalltext">Powered by <a href="http://www.typeandgrids.com" target="_blank">Type &amp; Grids</a></li>
       </ul>
 
-		</footer>
-	</div>
+    </footer>
+  </div>
 </div>
 
 <script src="all/vendor/jquery.min.js"></script>
 <!-- <script src="all/foundation.min.js"></script>
 <script src="all/hawthorne.js"></script>
-
  -->
+
 <script>
 var MS_URLS = [
   {
@@ -270,7 +267,7 @@ for (var i = 0; i < MS_URLS.length; i++) {
   //$item = $('<div class="thumbnail-wrap"></div>').append('\
   $item = $('<a target="_blank" href="'+MS_URLS[i].url+'"></a>').append('\
     <div class="thumbnail-div">\
-          <img src="img/'+MS_URLS[i].jpg+'"/>\
+          <img src="img/'+MS_URLS[i].jpg+'" alt="'+MS_URLS[i].name+'" title="'+MS_URLS[i].name+'"/>\
         </div>\
     ');
 
@@ -281,14 +278,14 @@ for (var i = 0; i < MS_URLS.length; i++) {
 // GIN
 for (var i = 0; i < URLS.length; i++) {
   //$item = $('<div class="thumbnail-wrap"></div>').append('\
-	$item = $('<a target="_blank" href="'+URLS[i].url+'"></a>').append('\
-		<div class="thumbnail-div">\
-          <img src="img/'+URLS[i].jpg+'"/>\
-				</div>\
-		');
+  $item = $('<a target="_blank" href="'+URLS[i].url+'"></a>').append('\
+    <div class="thumbnail-div">\
+          <img src="img/'+URLS[i].jpg+'" alt="'+URLS[i].name+'" title="'+URLS[i].name+'"/>\
+        </div>\
+    ');
 
 
-	$('#gallery').append($item);
+  $('#gallery').append($item);
 };
 
 </script>
