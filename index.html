@@ -103,7 +103,7 @@
 var MS_URLS = [
   {
     "name":"Intro to Coding",
-    "jpg":"you_thought_you_werent.png",
+    "jpg":"you_thought_you_werent.png", // clipped to 353 x 246
     "url":"http://jhnklly.github.io/hello_code/"
   },
   {
@@ -258,7 +258,15 @@ var URLS = [
     "name":"Factory Farms Map App",
     "jpg":"cafo.jpg",
     "url":"http://www.cafomap.org/"
-  }
+  },  {
+    "name":"Save Mount Diablo Trail Map",
+    "jpg":"gin_smd_diablo_map_profile_thumb.jpeg",
+    "url":"http://www.savemountdiablo.org/downloads/Media_Map.pdf"
+  },  {
+    "name":"Mt Diablo Interpretive Association trail map",
+    "jpg":"mdia_diablo.jpg",
+    "url":"https://www.rei.com/product/801873/mount-diablo-state-park-trail-map-6th-edition"
+  },
 ];
 
 
@@ -271,9 +279,8 @@ for (var i = 0; i < MS_URLS.length; i++) {
         </div>\
     ');
 
-
   $('#ms_gallery').append($item);
-};
+}
 
 // GIN
 for (var i = 0; i < URLS.length; i++) {
@@ -284,9 +291,8 @@ for (var i = 0; i < URLS.length; i++) {
         </div>\
     ');
 
-
   $('#gallery').append($item);
-};
+}
 
 </script>
 
