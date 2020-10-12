@@ -38,7 +38,7 @@ div.row {
 }
 
 .thumbnail-div > img {
-  max-width: 150%;
+  /* max-width: 150%; */
   min-width: 100%;
   min-height: 100%;
 }
